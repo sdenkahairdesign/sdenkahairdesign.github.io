@@ -1,7 +1,68 @@
-body {
-  min-height: 2000px;
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Oswald', sans-serif !important;
 }
 
-.navbar-static-top {
-  margin-bottom: 19px;
+body {
+    font-family: 'Raleway', serif !important;
+    font-size: 17px !important;
+    background-color: #fafafa;
+}
+
+a:visited {
+  color: #008080;
+}
+
+.navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
+    color: #00FFFF !important;
+    background-color: transparent !important;
+}
+
+.navbar {
+  font-family: 'Open Sans',sans-serif;
+  font-weight: bold !important;
+  font-size: 18px !important;
+  margin-bottom: 0px !important;
+}
+
+a.btn.btn-lg.btn-primary:visited {
+    color: white;
+}
+
+.main-body {
+    background-color: #ffffff !important;
+}
+
+.top5 {
+    padding-top: 5px;
+}
+
+.top10 {
+    padding-top: 10px;
+}
+
+.top15 {
+    padding-top: 15px;
+}
+
+.jumbotron-image {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+}
+
+.jumbo-dark-background-text {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 gray;
+
+}
+
+.dark-highlight {
+    background-color: rgba(0, 0, 0, 0.5);
+    padding-left: 10px;
+    padding-right: 10px;
 }

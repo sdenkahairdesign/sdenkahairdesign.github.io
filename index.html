@@ -17,14 +17,15 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <link href="/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
+    <link href="http://heyitscarloc.github.io/css/ie10-viewport-bug-workaround.css" rel="stylesheet">
 
     <!-- Custom styles for this template -->
-    <link href="/css/styles.css" rel="stylesheet">
+    <link href="./css/styles.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald|Raleway|Open+Sans" rel="stylesheet">
 
     <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
     <!--[if lt IE 9]><script src="../../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
-    <script src="/js/ie-emulation-modes-warning.js"></script>
+    <script src="http://heyitscarloc.github.io/js/ie-emulation-modes-warning.js"></script>
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -36,7 +37,7 @@
   <body>
 
     <!-- Static navbar -->
-    <nav class="navbar navbar-default navbar-static-top">
+    <nav class="navbar navbar-inverse navbar-static-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -45,7 +46,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="http://getbootstrap.com/examples/navbar-static-top/#">Project name</a>
+          <a class="navbar-brand" href="#">Project name</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
           <ul class="nav navbar-nav">
@@ -61,29 +62,52 @@
     </nav>
 
 
-    <div class="container">
+    <div class="container main-body top15">
 
       <!-- Main component for a primary marketing message or call to action -->
-      <div class="jumbotron">
-        <h1>Navbar example</h1>
-        <p>This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</p>
-        <p>To see the difference between static and fixed top navbars, just scroll.</p>
-        <p>
-          <a class="btn btn-lg btn-primary" href="http://getbootstrap.com/components/#navbar" role="button">View navbar docs »</a>
-        </p>
+      <div class="jumbotron jumbotron-image jumbo-dark-background-text" style="background: #000 url('./images/whitehouse.png') center center;">
+        <h1><span class="dark-highlight">Navbar example</span></h1>
+        <p><span class="dark-highlight">This example is a quick exercise to illustrate how the default, static and fixed to top navbar work. It includes the responsive CSS and HTML, so it also adapts to your viewport and device.</span></p>
+        <p><span class="dark-highlight">To see the difference between static and fixed top navbars, just scroll.</span></p>
+        <p><a class="btn btn-lg btn-primary" href="http://getbootstrap.com/components/#navbar" role="button">View navbar docs »</a></p>
       </div>
 
     </div> <!-- /container -->
+
+    <div class="container main-body">
+      <div class="row">
+        <div class="col-sm-4">
+          <h2><strong>About Us</strong></h2>
+            <p>Eyeth Consultants,LL (EC) provides well rounded certified American Sign Language interpreters to both the private and public sector. Our interpreters possess a wide range of credentials and experience, with a service user centered approach. We are dedicated to people and understand the need for effective communication.</p>
+            <p>EC is also focused on giving back to the community in a variety of ways. We are committed to the next generation of interpreters through mentoring. Likewise, we are a resource to our community through advocacy training.</p>
+            <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+        <div class="col-sm-4">
+          <h2><Strong>Be Our Guest</Strong></h2>
+          <p>EC offers a cost effective solution to finding top quality interpreters who specialize in communication facilitation. Our interpreters are well rounded, meaning they have integrity, are trustworthy, professional, reliable, skilled, and personable.</p>
+          <p>Our interpreters are nationally certified by the Registry of Interpreters for the Deaf (RID). Moreover, they comply with the RID and joint National Association of the Deaf (NAD) standards for Ethical decision making. All of our interpreters maintain their membership with RID and are in good standing with this national certifying body by maintaining their Continuing Education Units (CEU) as needed.</p>
+          <p>Eyeth Consultants, LLC is a direct hire company providing a variety of services including sign language interpreting, CART, advocacy, disability awareness training, writing or translations and mentoring for novice interpreters. Though we are based in the DC metropolitan area, we can accommodate services world wide as requested.</p>
+        </div>
+        <div class="col-sm-4">
+          <h2><strong>Community and Mentorship</strong></h2>
+          <p>EC looks for opportunities to connect with the community but also ways to grown, spotlight, and sustain our community. Looking for an interpreting mentor? Need disability awareness training? Looking for a resource? Check out the community connections below and our mentee/mentor testimonials.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+          <hr />
+          <h4>It's a Small World</h4>
+          <p>EC looks for opportunities to connect with the community but also ways to grown, spotlight, and sustain our community. Looking for an interpreting mentor? Need disability awareness training? Looking for a resource? Check out the community connections below and our mentee/mentor testimonials.</p>
+          <p><a class="btn btn-default" href="#" role="button">View details »</a></p>
+        </div>
+      </div>
+    </div>
 
 
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
-    <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
-    <script src="/js/ie10-viewport-bug-workaround.js"></script>
+    <script src="http://heyitscarloc.github.io/js/ie10-viewport-bug-workaround.js"></script>
 
 
 </body></html>
