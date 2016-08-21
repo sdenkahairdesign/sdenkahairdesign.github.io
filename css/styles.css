@@ -12,6 +12,20 @@ a:visited {
   color: #008080;
 }
 
+li {
+    display: block;
+}
+
+li:before {
+    /*Using a Bootstrap glyphicon as the bullet point*/
+    content: "\e080";
+    font-family: 'Glyphicons Halflings';
+    font-size: 9px;
+    float: left;
+    margin-top: 4px;
+    margin-left: -17px;
+}
+
 .navbar-inverse .navbar-nav>li>a:focus, .navbar-inverse .navbar-nav>li>a:hover {
     color: #00FFFF !important;
     background-color: transparent !important;
