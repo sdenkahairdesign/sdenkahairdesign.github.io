@@ -1,4 +1,29 @@
-<form action="https://formspree.io/ccabrales83@gmail.com"
+<script>
+  $("#contact").submit(function(e){
+    e.preventDefault();
+$.ajax({
+url: '//formspree.io/ccabrales83@gmail.com',
+method: 'POST',
+data: $(this).serialize(),
+dataType: 'json',
+beforeSend: function() {
+  $(document).write('<div class="alert alert--loading">Sending message…</div>');
+  alert('test');
+},
+success: function(data) {
+  $(document).write('<div class="alert alert--success">Message sent!</div>');
+  alert('test');
+},
+error: function(err) {
+  $(document).write('<div class="alert alert--error">Ops, there was an error.</div>');
+}
+});
+
+
+  });
+
+</script>
+<form id="contact" action="https://formspree.io/ccabrales83@gmail.com"
       method="POST">
     <input type="text" name="name">
     <input type="email" name="_replyto">
