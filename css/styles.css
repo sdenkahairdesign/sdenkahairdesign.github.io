@@ -6,23 +6,27 @@ body {
     font-family: 'Raleway', serif !important;
     font-size: 17px !important;
     background-color: #fafafa;
+    line-height: 1.5em;
 }
 
 a:visited {
   color: #008080;
 }
 
-li {
+ul.service-list {
+  padding-left: 15px;
+}
+.service-list li {
     display: block;
+    padding-bottom:10px;
 }
 
-li:before {
+.service-list li:before {
     /*Using a Bootstrap glyphicon as the bullet point*/
     content: "\e080";
     font-family: 'Glyphicons Halflings';
     font-size: 9px;
     float: left;
-    margin-top: 4px;
     margin-left: -17px;
 }
 
