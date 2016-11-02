@@ -7,6 +7,27 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script>
+    function mailTo() {
+      var mailToString = "mailto:?" +
+        "subject=xyz%20%232906%20erere%20by%20%20for%20sds%20Smoke test prod Test %231&" +
+        "body=%0D%0A%0D%0A" +
+        "%09Title%3A%20Smoke test prod Test %231%0D%0A" +
+        "%09wew%20Type%3A%20rwa%0D%0A" +
+        "%09wew%20Sub-Type%3A%20ewe%0D%0A" +
+        "%09Requested%20By%3A%20%0D%0A" +
+        "%09Submitted%20Date%3A%2006/03/2016%0D%0A" +
+        "%0D%0A" +
+        "%0D%0A" +
+        "You%20may%20view%20details%20of%20this%20request%20through%20eweqwe%20(https://test.test?id=2906).%0D%0A%0D%0A" +
+        "For%20wewe%20guidance%20questions%20please%20refer%20to%20the%20wew%20intranet%20page%20(https://test.help).%0D%0A%0D%0A" +
+        "For%20any%20technical%20issues%20please%20submit%20a%20help%20desk%20ticket%20(http://test.help/Support/).";
+
+      $('body').append($('<iframe id="mailTo" src="' + mailToString + '"/>'));
+      $('#mailTo').remove();
+    }
+
+  </script>
 </head>
 <body>
 
@@ -15,7 +36,45 @@
     <div class="col-sm-4">
 
       <p><a href="mailto:santa@northpole.com">Email Santa</a></p>
+      <p>
+      <a href="mailto:test@test.com">Send Mail Plain</a>
+      </p>
 
+      <p>
+        <a href="mailto:someone@example.com?Subject=Hello%20again">Send Mail</a>
+      </p>
+
+      <p>
+        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_blank">Send Mail target _blank</a>
+      </p>
+
+      <p>
+        <a href="mailto:someone@example.com?Subject=Hello%20again" target="_top">Send Mail target _top</a>
+      </p>
+
+      <p>
+        <a class="btn btn-default" href="javascript:mailTo()" title="Send Private Message. A private message opens outlook and is not tracked in the system. The private message populates several request detail fields for reference and link to the request in the email.">
+        Send Mail javascript iframe
+      </a>
+      </p>
+      <!--[if lt IE 10 ]>
+      <p>
+        <a class="btn btn-default" href="javascript:mailTo()" title="Send Private Message. A private message opens outlook and is not tracked in the system. The private message populates several request detail fields for reference and link to the request in the email.">
+        Send Mail javascript iframe downlevel for IE9 and below
+      </a>
+      </p>
+      <![endif]-->
+      <p>
+        <a href="mailto:?subject=xyz%20%232906%20erere%20by%20%20for%20sds%20Smoke test prod Test %231&body=%0D%0A%0D%0A%09Title%3A%20Smoke test prod Test %231%0D%0A%09wew%20Type%3A%20rwa%0D%0A%09wew%20Sub-Type%3A%20ewe%0D%0A%09Requested%20By%3A%20%0D%0A%09Submitted%20Date%3A%2006/03/2016%0D%0A%0D%0A%0D%0AYou%20may%20view%20details%20of%20this%20request%20through%20eweqwe%20(https://test.test?id=2906).%0D%0A%0D%0AFor%20wewe%20guidance%20questions%20please%20refer%20to%20the%20wew%20intranet%20page%20(https://test.help).%0D%0A%0D%0AFor%20any%20technical%20issues%20please%20submit%20a%20help%20desk%20ticket%20(http://test.help/Support/).">Send Mail with Long MailTo</a>
+      </p>
+
+      <p>
+        <a href="mailto:?subject=xyz%20%232906%20erere%20by%20%20for%20sds%20Smoke test prod Test %231&body=%0D%0A%0D%0A%09Title%3A%20Smoke test prod Test %231%0D%0A%09wew%20Type%3A%20rwa%0D%0A%09wew%20Sub-Type%3A%20ewe%0D%0A%09Requested%20By%3A%20%0D%0A%09Submitted%20Date%3A%2006/03/2016%0D%0A%0D%0A%0D%0AYou%20may%20view%20details%20of%20this%20request%20through%20eweqwe%20(https://test.test?id=2906).%0D%0A%0D%0AFor%20wewe%20guidance%20questions%20please%20refer%20to%20the%20wew%20intranet%20page%20(https://test.help).%0D%0A%0D%0AFor%20any%20technical%20issues%20please%20submit%20a%20help%20desk%20ticket%20(http://test.help/Support/)." target="_top">Send Mail with Long MailTo target top</a>
+      </p>
+
+      <p>
+        <a href="mailto:?subject=xyz%20%232906%20erere%20by%20%20for%20sds%20Smoke test prod Test %231&body=%0D%0A%0D%0A%09Title%3A%20Smoke test prod Test %231%0D%0A%09wew%20Type%3A%20rwa%0D%0A%09wew%20Sub-Type%3A%20ewe%0D%0A%09Requested%20By%3A%20%0D%0A%09Submitted%20Date%3A%2006/03/2016%0D%0A%0D%0A%0D%0AYou%20may%20view%20details%20of%20this%20request%20through%20eweqwe%20(https://test.test?id=2906).%0D%0A%0D%0AFor%20wewe%20guidance%20questions%20please%20refer%20to%20the%20wew%20intranet%20page%20(https://test.help).%0D%0A%0D%0AFor%20any%20technical%20issues%20please%20submit%20a%20help%20desk%20ticket%20(http://test.help/Support/)." target="_blank">Send Mail with Long MailTo target blank</a>
+      </p>
     </div>
   </div>
 </div>
